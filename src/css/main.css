@@ -1,0 +1,147 @@
+html{ scroll-behavior:smooth; overflow-x:hidden }
+::-webkit-scrollbar{ width:10px }
+::-webkit-scrollbar-track{ background:#04433d }
+::-webkit-scrollbar-thumb{ background:#2ec4b6 }
+::-webkit-scrollbar-thumb:hover{ background:#fff }
+body{ float:left; font-family: 'Heebo'; overflow-x: hidden; overflow-y: hidden; margin: 0; padding: 0; width: -webkit-fill-available; }
+img{ width:100%; height:initial }
+
+@font-face {
+    font-family: 'Heebo';
+    src: url('./fonts/Heebo-Regular.eot');
+    src: url('./fonts/Heebo-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Heebo-Regular.woff2') format('woff2'),
+        url('./fonts/Heebo-Regular.woff') format('woff'),
+        url('./fonts/Heebo-Regular.ttf') format('truetype'),
+        url('./fonts/Heebo-Regular.svg#Heebo-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display:swap;
+}
+
+@font-face {
+    font-family: 'Heebo';
+    src: url('./fonts/Heebo-Bold.eot');
+    src: url('./fonts/Heebo-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Heebo-Bold.woff2') format('woff2'),
+        url('./fonts/Heebo-Bold.woff') format('woff'),
+        url('./fonts/Heebo-Bold.ttf') format('truetype'),
+        url('./fonts/Heebo-Bold.svg#Heebo-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display:swap;
+}
+
+@font-face {
+    font-family: 'Anton';
+    src: url('./fonts/Anton-Regular.eot');
+    src: url('./fonts/Anton-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Anton-Regular.woff2') format('woff2'),
+        url('./fonts/Anton-Regular.woff') format('woff'),
+        url('./fonts/Anton-Regular.ttf') format('truetype'),
+        url('./fonts/Anton-Regular.svg#Anton-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display:swap;
+}
+
+
+.containerBgs{ background-size:cover; background-repeat:no-repeat }
+.webp .bg1{ background-image:url(images/topBackground.webp) }
+.no-webp .bg1{ background-image:url(images/img-fallback/topBackground.jpg) }
+
+.navbar-light .navbar-nav .nav-link { color: rgba(0,0,0,.9); }
+.navbar-light .navbar-nav .nav-link:hover { color: #2ec4b6; }
+
+
+.verdeC{background-color:#2ec4b6;}
+.verdeP{background-color:#04433d;}
+
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+
+.fLight{color:#FFF;}
+.fVerdeP{color:#04433d;}
+.fVerdeC{color:#2ec4b6;}
+.fVerdeC:hover{color:#04433d;}
+
+.btn-primary { color: #fff; background-color: #04433d; border-color: #2ec4b6; }
+.btn-primary:hover { color: #04433d; background-color: #2ec4b6; border-color: #2ec4b6; }
+
+/* .topTitle{ font-size: 8rem; line-height: .5; } */
+.topTitle{ font-size: 11.3rem; line-height: .5; }
+/* .subTitle{ font-size: 3.5rem; } */
+.subTitle{ font-size: 5rem; }
+
+h2{font-size: 3rem;}
+
+.youtube-player{ position:relative; padding-bottom:56.23%; height:0; overflow:hidden; max-width:100%; background:#000; margin:5px }
+.youtube-player iframe{ position:absolute; top:0; left:0; width:100%; height:100%; z-index:100; background:0 0 }
+.youtube-player img{ bottom:0; display:block; left:0; margin:auto; max-width:100%; width:100%; position:absolute; right:0; top:0; border:none; height:auto; cursor:pointer; -webkit-transition:.4s all; -moz-transition:.4s all; transition:.4s all; -ms-transition:.4s all; -o-transition:.4s all; }
+.youtube-player img:hover{ -webkit-filter:brightness(75%) }
+.youtube-player .play{ height:72px; width:72px; left:50%; top:50%; margin-left:-36px; margin-top:-36px; position:absolute; cursor:pointer }
+.webp .play{ background-image:url(images/video_play.webp) }
+.no-webp .play{ background-image:url(images/img-fallback/video_play.png) }
+
+
+.socialMediaTextH:hover, .carouselTitleH:hover {color: #2ec4b6;}
+.copyrightTxt:hover{color:#fff;}
+
+.socialMediaTextH:hover, .carouselTitleH:hover, .fVerdeC:hover, .nav-link:hover, .copyrightTxt:hover{ transition: ease .5s; -webkit-transition: ease .5s; -moz-transition: ease .5s; -ms-transition: ease .5s; -o-transition: ease .5s; }
+.rounded-circle:hover ~ .carouselTitleH{ color: #2ec4b6; transition: ease .5s; -webkit-transition: ease .5s; -moz-transition: ease .5s; -ms-transition: ease .5s; -o-transition: ease .5s; }
+
+
+.bttCustom { float: right; position: fixed; margin-top: -12.8%; right: 1%; display: block; z-index: 9; }
+
+
+/*---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===-*/
+/* media queries quick fix graveyard */
+    
+    @media only screen and (min-width:1201px) {
+        
+        .socialMediaFontSize{font-size: 1.3rem;}
+        .titleHeight{min-height: 68vh;}
+    }
+    
+    /*---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===-*/
+    @media only screen and (max-width:1200px) {
+        .titleHeight{min-height: 29vh;}
+
+        .bttCustom { margin-top: 80.1%; }
+    }
+    
+    /*---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===-*/
+    @media only screen and (max-width:992px) { 
+
+        .bttCustom { margin-top: -47.1%; }
+    
+    }
+    
+    /*---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===-*/
+    @media only screen and (max-width:768px) {
+        
+        .socialMediaFontSize{font-size: .75rem;}
+    }
+    
+    /*---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===-*/
+    @media only screen and (max-width:480px) {
+
+        .subTitle { font-size: 3.4rem; }
+        .topTitle { font-size: 7.66rem; line-height: .5; }
+        
+        .bttCustom { margin-top: -59.1%; }
+        .socialMediaFontSize{font-size: .75rem;}
+    }
+    
+    /*---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===-*/
+    @media only screen and (max-width:320px) {
+    
+        .subTitle { font-size: 2.9rem; }
+        .topTitle { font-size: 6.5rem; line-height: .5; }
+
+        .bttCustom { margin-top: -94.1%; }
+
+        .socialMediaFontSize{font-size: .65rem;}
+    }
+
+    /*---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===---===---___---===-*/
